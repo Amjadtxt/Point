@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+
+}
+body{
+    background-color: #24272B;
+    color:#ffffff;
+    font-size: 20px;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+}
+header .navbar{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+.navbar ul li a{
+    text-decoration: none;
+}
+
+.navbar .linksmenu{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+
+}
+.navbar a{
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.5s;
+} 
+.navbar a:hover {
+    color: #5f9ea0;
+}
+
+.navbar .logo{
+    width: 60px;
+}
+
+.ajsection{
+    height: 70vh;
+    align-items: center;
+    display: flex;
+    padding: 0 10%;
+}
+
+.ajsection .content h1{
+max-width: 600px;
+font-size: 3rem;
+}
+
+.ajsection .content p{
+    font-weight: 300;
+    margin-top: 15px;
+    max-width: 600px;
+    padding-bottom: 10px;
+}
+.ajsection .content p .txtlogo{
+    color:#5f9ea0
+}
+.ajsection .content h1 .hellomsg{
+    color: #5f9ea0;
+}
+.ajsection .content h1 .whomsg,.tblogmsg,.contactmsg{
+    color: #5f9ea0;
+}
+.ajsection .content h1 .sorrymsg{
+    color: #5f9ea0;
+}
+
+.ajsection .content .icons .icon{
+    padding-top: 10px;
+    font-size: 30px;
+color:#5f9ea0;}
+
+@media only screen and (max-width: 800px) {
+    .navbar .linksmenu{
+        gap:12px;
+        font-size: 19px;
+    }
+    .navbar .logo {
+        width: 55px;
+    }
+    .ajsection {
+        height: 90vh;
+    }
+}  
+.ajsection-blog{
+    height: 97vh;
+    align-items: center;
+    display: flex;
+    padding: 0 18%;
+}
+.ajsection-blog .sorrymsg{
+    color: #5f9ea0;
+}
+.ajsection-blog h2{
+    padding-bottom: 19px;
+    font-size: 40px;
+}
+
+
+.portfolio-sec{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 30px;
+    justify-content: space-around;
+    width: 1000px;
+}
+.portfolio-sec .post{
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border: 3px #87919e solid;
+    text-align: center;
+    height: 30vh;
+    width: 250px;
+}
+
+.portfolio-sec p{
+padding: 65px;
+font-size: 50px;
+color: #87919e;
+}
+
+@media only screen and (max-width: 800px) {
+    .portfolio-sec{
+        grid-template-columns :auto;
+        width: 367px;
+        gap: 15px;
+    }
+    .ajsection-blog{
+        padding: 0 2%;
+        height: 190vh;
+    }
+    .portfolio-sec .post{
+        height: 17vh;
+        width: 330px;
+    }
+    .post p{
+        font-size: 60px;
+        padding: 30px;
+    }
+}  
