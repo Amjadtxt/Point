@@ -30,7 +30,7 @@ header .navbar{
 
 .navbar .linksmenu{
     display: flex;
-    gap: 30px;
+    gap: 40px;
     list-style: none;
 
 }
@@ -85,8 +85,8 @@ color:#5f9ea0;}
 
 @media only screen and (max-width: 800px) {
     .navbar .linksmenu{
-        gap:12px;
-        font-size: 19px;
+        gap:10px;
+        font-size: 14px;
     }
     .navbar .logo {
         width: 55px;
